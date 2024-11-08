@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>hello for dev</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preload" href="image/image.jpg" as="image" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+  </head>
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      VANTA.BIRDS({
+        el: "#vanta",
+        mouseControls: true,
+        touchControls: false,
+        gyroControls: false,
+        backgroundAlpha: 0.0,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+        birdSize: 1.8,
+        wingSpan: 10.0,
+        separation: 49.0,
+        alignment: 67.0,
+        cohesion: 73.0,
+        quantity: 4.0,
+      });
+
+      setTimeout(() => {
+        const main = document.querySelector("main");
+        main.style.opacity = 1;
+        main.style.filter = "blur(0px)";
+      }, 1000);
+    });
+  </script>
+  <body>
+    <div id="vanta"></div>
+    <main class="animated">
+      <header>
+        <img
+          src="image/457616378_1466122257439695_5070152767004102832_n.jpg"
+          width="100"
+          height="100"
+        />
+        <h1>KUN</h1>
+      </header>
+      <ul>
+        <li>
+          <a href="https://github.com/kun20101922">github</a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/kun.1vc02/">ig</a>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
